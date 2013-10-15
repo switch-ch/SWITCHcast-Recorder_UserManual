@@ -80,7 +80,7 @@
     <!-- <item href="texts/toc.xhtml" id="toc" media-type="application/xhtml+xml" /> -->
     <item href="texts/foreword.xhtml" id="foreword" media-type="application/xhtml+xml" />
     <item href="texts/introduction.xhtml" id="introduction" media-type="application/xhtml+xml" />
-    <item href="texts/chapter01.xhtml" id="chapter-1" media-type="application/xhtml+xml" />
+    <item href="texts/installation.xhtml" id="chapter-1" media-type="application/xhtml+xml" />
     <item href="texts/chapter02.xhtml" id="chapter-2" media-type="application/xhtml+xml" />
     <item href="texts/chapter03.xhtml" id="chapter-3" media-type="application/xhtml+xml" />
     <item href="texts/endnotes.xhtml" id="endnotes" media-type="application/xhtml+xml" />
@@ -141,7 +141,7 @@
     <reference href="texts/foreword.xhtml" type="foreword" />
     <reference href="texts/dedication.xhtml" type="dedication" />
     <reference href="texts/introduction.xhtml" type="text" />
-    <reference href="texts/chapter01.xhtml" type="text" />
+    <reference href="texts/installation.xhtml" type="text" />
     <reference href="texts/chapter02.xhtml" type="text" />
     <reference href="texts/chapter03.xhtml" type="text" />
     <reference href="texts/endnotes.xhtml" type="notes" />
