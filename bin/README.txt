@@ -8,15 +8,6 @@ used as a library.
 
 Epubcheck project home: http://code.google.com/p/epubcheck/
 
-BUILDING
-
-To build epubcheck from the sources you need Java Development Kit (JDK) 1.5 or above
-and Apache ant (http://ant.apache.org/) 1.6 or above installed
-
-Run
-
-ant -f build.xml
-
 RUNNING
 
 To run the tool you need Java Runtime (1.5 or above). Any OS should do. Run
@@ -24,7 +15,7 @@ it from the command line:
 
 java -jar epubcheck-x.x.x.jar file.epub
 
-All detected errors are simply printed to stderr. 
+All detected errors are simply printed to stderr.
 
 USING AS A LIBRARY
 
@@ -37,25 +28,23 @@ validation engine (instead of the error list being printed out).
 
 LICENSING
 
-See COPYING.txt
+See COPYING.txt and THIRD-PARTY.txt
 
-AUTHORS
+AUTHORS / CONTRIBUTORS
 
 Peter Sorotokin 
 Garth Conboy 
 Markus Gylling 
 Piotr Kula
+Paul Norton
+Liza Daly
+Jessica Hekman
+George Bina
+Bogdan Iordache
+Ionut-Maxim Margelatu
+Thomas Ledoux
+Romain Deltour
 
 Most of the EpubCheck functionality comes from the schema validation tool Jing
 and schemas that were developed by IDPF and DAISY. EpubCheck development was
 largely done at Adobe Systems. 
-
-
-
-
-
-
-
-
-
-

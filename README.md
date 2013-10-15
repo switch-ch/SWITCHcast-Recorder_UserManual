@@ -27,14 +27,14 @@ Here's the structure of the sample book included in the repo:
       ▾ META-INF/
           com.apple.ibooks.display-options.xml
           container.xml
-      ▾ OEBPS/
-        ▾ Images/
+      ▾ EPUB/
+        ▾ images/
             cover.jpg
             image-01.jpg
             image-02.png
-        ▾ Styles/
+        ▾ stylesheets/
             style.css
-        ▾ Text/
+        ▾ texts/
             acknowledgements.xhtml
             chapter01.xhtml
             chapter02.xhtml
@@ -49,7 +49,7 @@ Here's the structure of the sample book included in the repo:
           content.opf
           toc.ncx
         mimetype
-        
+
 ## ePub validation
 
 This project uses epubcheck to validate the generated ePubs. If the ``build.sh`` script complains when running ``epubcheck``, make sure you have java installed and it's in your PATH.
@@ -58,7 +58,7 @@ If you need help running epubcheck read this <a href="http://blog.threepress.org
 
 ## Using the check script to validate the book.
 
-It's supereasy. Just do: 
+It's supereasy. Just do:
 
     $ ./check book.epub
 
@@ -78,7 +78,7 @@ Here's what you can do if you want to transform your ``.epub`` file to ``.mobi``
 4. Run ``./bin/kindlegen book.epub``.
 
 ## Useful resources
-      
+
 * [EPUB 3.0 spec](http://idpf.org/epub/30)
 * [Device compatibilty chart](http://wiki.mobileread.com/wiki/Device_Compatibility)
 * [ePub CSS Starter Kit](https://github.com/mattharrison/epub-css-starter-kit)
