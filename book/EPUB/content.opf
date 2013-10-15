@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US" xmlns:dc="http://purl.org/dc/elements/1.1/"> -->
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="scum-id" xml:lang="en" dir="ltr">
+  <!-- <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> -->
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <!-- ISBN -->
+    <!-- <dc:identifier id="scum-identifier">urn:isbn:[ISBN]</dc:identifier> -->
+    <!-- <dc:identifier id="scum-identifier" opf:scheme="ISBN">urn:isbn:[ISBN]</dc:identifier> -->
+    <!-- UUID generator: http://www.famkruithof.net/uuid/uuidgen -->
+    <dc:identifier id="scum-id">urn:uuid:7a5bc8b0-3578-11e3-aa6e-0800200c9a66</dc:identifier>
+    <meta property="dcterms:modified">2013-10-15T12:00:00Z</meta>
+    <dc:title id="scum-title">SWITCHcast Recorder - User Manual</dc:title>
+    <dc:creator id="scum-creator">Christian Rohrer</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:date>2013-10-14T00:00:00Z</dc:date>
+    <dc:rights>Copyright © 2013 SWITCH. All rights reserved.</dc:rights>
+
+    <!-- BISAC Subject Headings List: http://www.bisg.org/what-we-do-0-136-bisac-subject-headings-list-major-subjects.php-->
+    <dc:subject>[LIST / OF / SUBJECTS]</dc:subject>
+
+
+
+    <dc:source>[SOURCE URL]</dc:source>
+
+
+    <!-- List of contributors
+
+         See: MARC Code List for Relators: http://www.loc.gov/marc/relators/relaterm.html
+
+         Examples:
+
+         * Editor [edt]
+           Use for a person or organization who prepares for publication a work not primarily his/her own,
+           such as by elucidating text, adding introductory or other critical matter, or technically directing
+           an editorial staff.
+
+         * Cover designer [cov]
+           Use for a person or organization responsible for the graphic design of a book cover,
+           album cover, slipcase, box, container, etc. For a person or organization responsible
+           for the graphic design of an entire book, use Book designer; for book jackets, use Bookjacket designer.
+
+         * Translator [trl]
+           Use for a person or organization who renders a text from one language into another, or from an older
+           form of a language into the modern form.
+
+         -->
+
+    <!-- <dc:contributor opf:file-as="[LASTNAME, NAME]" opf:role="edt">[NAME LASTNAME]</dc:contributor> -->
+
+    <dc:publisher>SWITCH</dc:publisher>
+    <!-- <dc:date opf:event="publication">2012-01-01</dc:date> -->
+
+    <!-- Language code: http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes -->
+    <!-- <dc:language>en</dc:language> -->
+
+    <meta name="cover" content="[COVER_NAME].jpg" />
+  </metadata>
+
+  <!-- MANIFEST (mandatory)
+       List of all the resources of the book (XHTML, CSS, images,…).
+       The order of item elements in the manifest is NOT significant.
+
+       http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.3
+  -->
+
+  <manifest>
+    <item href="images/cover.jpg" id="cover.jpg" properties="cover-image" media-type="image/jpeg" />
+    <item href="texts/cover.xhtml" id="cover" media-type="application/xhtml+xml" />
+    <item href="texts/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <!-- <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" /> -->
+    <item href="stylesheets/base.css" id="base_css" media-type="text/css" />
+    <item href="stylesheets/style.css" id="css" media-type="text/css" />
+    <item href="fonts/Inconsolata.otf" id="inconsolata_font" media-type="application/vnd.ms-opentype"/>
+    <item href="fonts/invisible1.ttf" id="invisible1_font" media-type="application/vnd.ms-opentype"/>
+    <item href="fonts/MgOpenModataRegular.ttf" id="mg-open-modata-regular_font" media-type="application/vnd.ms-opentype"/>
+    <item href="texts/frontmatter.xhtml" id="frontmatter" media-type="application/xhtml+xml" />
+    <item href="texts/dedication.xhtml" id="dedication" media-type="application/xhtml+xml" />
+    <!-- <item href="texts/toc.xhtml" id="toc" media-type="application/xhtml+xml" /> -->
+    <item href="texts/foreword.xhtml" id="foreword" media-type="application/xhtml+xml" />
+    <item href="texts/introduction.xhtml" id="introduction" media-type="application/xhtml+xml" />
+    <item href="texts/chapter01.xhtml" id="chapter-1" media-type="application/xhtml+xml" />
+    <item href="texts/chapter02.xhtml" id="chapter-2" media-type="application/xhtml+xml" />
+    <item href="texts/chapter03.xhtml" id="chapter-3" media-type="application/xhtml+xml" />
+    <item href="texts/endnotes.xhtml" id="endnotes" media-type="application/xhtml+xml" />
+    <item href="texts/acknowledgements.xhtml" id="acknowledgements" media-type="application/xhtml+xml" />
+    <item href="images/image-01.jpg" id="image-01" media-type="image/jpeg" />
+    <item href="images/image-02.png" id="image-02" media-type="image/png" />
+  </manifest>
+
+  <!-- SPINE (mandatory)
+
+       The spine element defines the default reading order of the content. It doesn't list every file in the manifest,
+       just the reading order.
+
+       The value of the idref tag in the spine has to match the ID tag for that entry in the manifest.
+
+       For example, if you have the following reference in your manifest:
+
+          <item id="chapter-1" href="chapter01.xhtml" media-type="application/xhtml+xml" />
+
+       your spine entry would be:
+
+          <itemref idref="chapter-1" />
+
+       http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.4
+
+  -->
+  <spine>
+    <itemref idref="cover" />
+    <itemref idref="frontmatter" />
+    <itemref idref="nav" />
+    <!-- <itemref idref="toc" /> -->
+    <itemref idref="foreword" />
+    <itemref idref="dedication" />
+    <itemref idref="introduction" />
+    <itemref idref="chapter-1" />
+    <itemref idref="chapter-2" />
+    <itemref idref="chapter-3" />
+    <itemref idref="endnotes" />
+    <itemref idref="acknowledgements" />
+  </spine>
+
+  <!-- GUIDE (optional, recommended by Apple)
+
+        The guide lets you specify the role of the book's files.
+
+        Available tags: cover, title-page, toc, index, glossary, acknowledgements, bibliography,
+        colophon, copyright-page, dedication, epigraph, foreword, loi (list of illustrations),
+        lot (list of tables), notes, preface, and text.
+
+        http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.6
+
+  -->
+  <guide>
+    <reference href="texts/cover.xhtml" title="Cover" type="cover" />
+    <reference href="texts/nav.xhtml" title="Table of Contents" type="toc" />
+    <!-- <reference href="texts/toc.xhtml" title="Table of Contents" type="toc" /> -->
+    <reference href="texts/frontmatter.xhtml" type="copyright-page" />
+    <reference href="texts/foreword.xhtml" type="foreword" />
+    <reference href="texts/dedication.xhtml" type="dedication" />
+    <reference href="texts/introduction.xhtml" type="text" />
+    <reference href="texts/chapter01.xhtml" type="text" />
+    <reference href="texts/chapter02.xhtml" type="text" />
+    <reference href="texts/chapter03.xhtml" type="text" />
+    <reference href="texts/endnotes.xhtml" type="notes" />
+    <reference href="texts/acknowledgements.xhtml" type="acknowledgements" />
+  </guide>
+
+</package>
