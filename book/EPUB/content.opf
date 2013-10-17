@@ -55,7 +55,7 @@
     <!-- Language code: http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes -->
     <!-- <dc:language>en</dc:language> -->
 
-    <meta name="cover" content="[COVER_NAME].jpg" />
+    <meta name="cover" content="cover.svg" />
   </metadata>
 
   <!-- MANIFEST (mandatory)
@@ -66,12 +66,13 @@
   -->
 
   <manifest>
-    <item href="images/cover.jpg" id="cover.jpg" properties="cover-image" media-type="image/jpeg" />
-    <item href="texts/cover.xhtml" id="cover" media-type="application/xhtml+xml" />
+    <item href="images/cover.svg" id="cover" properties="cover-image" media-type="image/svg+xml" />
+    <!-- <item href="texts/cover.xhtml" id="cover" media-type="application/xhtml+xml" /> -->
     <item href="texts/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <!-- <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" /> -->
-    <item href="stylesheets/base.css" id="base_css" media-type="text/css" />
-    <item href="stylesheets/style.css" id="css" media-type="text/css" />
+    <item href="stylesheets/base.css" id="css.base" media-type="text/css" />
+    <item href="stylesheets/style.css" id="css.style" media-type="text/css" />
+    <item href="fonts/eurostile-reg-webfont.woff" id="font.eurostile.regular" media-type="application/font-woff"/>
     <item href="fonts/Inconsolata.otf" id="inconsolata_font" media-type="application/vnd.ms-opentype"/>
     <item href="fonts/invisible1.ttf" id="invisible1_font" media-type="application/vnd.ms-opentype"/>
     <item href="fonts/MgOpenModataRegular.ttf" id="mg-open-modata-regular_font" media-type="application/vnd.ms-opentype"/>
@@ -80,9 +81,23 @@
     <!-- <item href="texts/toc.xhtml" id="toc" media-type="application/xhtml+xml" /> -->
     <item href="texts/foreword.xhtml" id="foreword" media-type="application/xhtml+xml" />
     <item href="texts/introduction.xhtml" id="introduction" media-type="application/xhtml+xml" />
-    <item href="texts/installation.xhtml" id="chapter-1" media-type="application/xhtml+xml" />
-    <item href="texts/chapter02.xhtml" id="chapter-2" media-type="application/xhtml+xml" />
-    <item href="texts/chapter03.xhtml" id="chapter-3" media-type="application/xhtml+xml" />
+
+    <item href="texts/installation.xhtml" id="installation"
+          media-type="application/xhtml+xml"
+          properties="remote-resources"/>
+    <item id="webm-bunny" media-type="video/webm"
+          href="videos/recorder_download.webm" />
+    <item id="m4v-bunny" media-type="video/x-m4v"
+          href="videos/recorder_download.m4v" />
+    <item id="remote-bunny"
+          href="http://video.webmfiles.org/big-buck-bunny_trailer.webm"
+          media-type="video/webm" />
+    <item id="bunny-track"
+          href="videos/captions/en/bunny.ttml"
+          media-type="application/ttml+xml" />
+
+    <item href="texts/recording.xhtml" id="recording" media-type="application/xhtml+xml" />
+    <item href="texts/recording-single.xhtml" id="recording-single" media-type="application/xhtml+xml" />
     <item href="texts/endnotes.xhtml" id="endnotes" media-type="application/xhtml+xml" />
     <item href="texts/acknowledgements.xhtml" id="acknowledgements" media-type="application/xhtml+xml" />
     <item href="images/image-01.jpg" id="image-01" media-type="image/jpeg" />
@@ -115,9 +130,9 @@
     <itemref idref="foreword" />
     <itemref idref="dedication" />
     <itemref idref="introduction" />
-    <itemref idref="chapter-1" />
-    <itemref idref="chapter-2" />
-    <itemref idref="chapter-3" />
+    <itemref idref="installation" />
+    <itemref idref="recording" />
+    <itemref idref="recording-single" />
     <itemref idref="endnotes" />
     <itemref idref="acknowledgements" />
   </spine>
@@ -134,7 +149,8 @@
 
   -->
   <guide>
-    <reference href="texts/cover.xhtml" title="Cover" type="cover" />
+    <!-- <reference href="texts/cover.xhtml" title="Cover" type="cover" /> -->
+    <reference href="images/cover.svg" title="Cover" type="cover" />
     <reference href="texts/nav.xhtml" title="Table of Contents" type="toc" />
     <!-- <reference href="texts/toc.xhtml" title="Table of Contents" type="toc" /> -->
     <reference href="texts/frontmatter.xhtml" type="copyright-page" />
@@ -142,8 +158,8 @@
     <reference href="texts/dedication.xhtml" type="dedication" />
     <reference href="texts/introduction.xhtml" type="text" />
     <reference href="texts/installation.xhtml" type="text" />
-    <reference href="texts/chapter02.xhtml" type="text" />
-    <reference href="texts/chapter03.xhtml" type="text" />
+    <reference href="texts/recording.xhtml" type="text" />
+    <reference href="texts/recording-single.xhtml" type="text" />
     <reference href="texts/endnotes.xhtml" type="notes" />
     <reference href="texts/acknowledgements.xhtml" type="acknowledgements" />
   </guide>
