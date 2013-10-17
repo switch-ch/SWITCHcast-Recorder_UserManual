@@ -126,10 +126,10 @@ p {
   -webkit-hyphens: none !important;
   adobe-hyphenate: none !important; }
 
-.rtl {
+/*.rtl {
   direction: rtl;
   float: right; }
-
+*/
 .drop {
   overflow: hidden;
   line-height: 89%;
@@ -516,6 +516,7 @@ table.footnote {
   margin-left: 4em;
   text-indent: -1em; }
 
+
 @font-face {
   font-family: Inconsolata Mono;
   font-style: normal;
@@ -641,7 +642,8 @@ tt, pre, .mono {
     font-size: 2em; }
 
   h2 {
-    font-size: 1em; }
+    font-size: 1em;
+  }
 
   h3 {
     font-size: 2em; }
