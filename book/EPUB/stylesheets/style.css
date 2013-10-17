@@ -1,4 +1,4 @@
-/* TODO: add basic style */
+@import 'base.css';
 
 body {
   line-height: 1.5em;
@@ -6,6 +6,33 @@ body {
 
 p.first {
   text-indent: 0;
+}
+
+h2 {
+  font-family:EurostileTRegular,Verdana;
+}
+
+@font-face {
+    font-family: 'EurostileTRegular';
+    font-weight: normal;
+    font-style: normal;
+    src:url(../fonts/eurostile-reg-webfont.woff) format('woff');
+}
+
+div.header {
+   display: none;
+   display: oeb-page-head;
+}
+
+div.footer {
+   display: none;
+   display: oeb-page-foot;
+}
+
+video {
+   width: 640px;
+   height: 360px;
+   max-width: 100%;
 }
 
 /* Kindle Legacy Specific Styles */
