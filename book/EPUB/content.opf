@@ -66,42 +66,44 @@
   -->
 
   <manifest>
-    <item href="images/cover.svg" id="cover" properties="cover-image" media-type="image/svg+xml" />
+
     <!-- <item href="texts/cover.xhtml" id="cover" media-type="application/xhtml+xml" /> -->
-    <item href="texts/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <!-- <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" /> -->
-    <item href="stylesheets/base.css" id="css.base" media-type="text/css" />
-    <item href="stylesheets/style.css" id="css.style" media-type="text/css" />
+
+    <!-- Stylesheets -->
+    <item href="stylesheets/screen.css" id="css.screen" media-type="text/css" />
+    <item href="stylesheets/print.css" id="css.print" media-type="text/css" />
+
+    <!-- Fonts -->
     <item href="fonts/eurostile-reg-webfont.woff" id="font.eurostile.regular" media-type="application/font-woff"/>
     <item href="fonts/Inconsolata.otf" id="inconsolata_font" media-type="application/vnd.ms-opentype"/>
     <item href="fonts/invisible1.ttf" id="invisible1_font" media-type="application/vnd.ms-opentype"/>
     <item href="fonts/MgOpenModataRegular.ttf" id="mg-open-modata-regular_font" media-type="application/vnd.ms-opentype"/>
-    <item href="texts/frontmatter.xhtml" id="frontmatter" media-type="application/xhtml+xml" />
-    <item href="texts/dedication.xhtml" id="dedication" media-type="application/xhtml+xml" />
+
+    <!-- Texts -->
+    <item href="texts/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <!-- <item href="texts/toc.xhtml" id="toc" media-type="application/xhtml+xml" /> -->
-    <item href="texts/foreword.xhtml" id="foreword" media-type="application/xhtml+xml" />
-    <item href="texts/introduction.xhtml" id="introduction" media-type="application/xhtml+xml" />
-
-    <item href="texts/installation.xhtml" id="installation"
-          media-type="application/xhtml+xml"
-          properties="remote-resources"/>
-    <item id="webm-bunny" media-type="video/webm"
-          href="videos/recorder_download.webm" />
-    <item id="m4v-bunny" media-type="video/x-m4v"
-          href="videos/recorder_download.m4v" />
-    <item id="remote-bunny"
-          href="http://video.webmfiles.org/big-buck-bunny_trailer.webm"
-          media-type="video/webm" />
-    <item id="bunny-track"
-          href="videos/captions/en/bunny.ttml"
-          media-type="application/ttml+xml" />
-
+    <item href="texts/installation.xhtml" id="installation" media-type="application/xhtml+xml" properties="remote-resources"/>
     <item href="texts/recording.xhtml" id="recording" media-type="application/xhtml+xml" />
-    <item href="texts/recording-single.xhtml" id="recording-single" media-type="application/xhtml+xml" />
-    <item href="texts/endnotes.xhtml" id="endnotes" media-type="application/xhtml+xml" />
-    <item href="texts/acknowledgements.xhtml" id="acknowledgements" media-type="application/xhtml+xml" />
-    <item href="images/image-01.jpg" id="image-01" media-type="image/jpeg" />
-    <item href="images/image-02.png" id="image-02" media-type="image/png" />
+    <item href="texts/recorder-ui.html" id="recorder-ui" media-type="application/xhtml+xml" properties="svg" />
+    <item href="texts/recording-single.html" id="recording-single" media-type="application/xhtml+xml" />
+    <item href="texts/uploading.xhtml" id="uploading" media-type="application/xhtml+xml" />
+    <item href="texts/acknowledgements.html" id="acknowledgements" media-type="application/xhtml+xml" />
+
+    <!-- Images -->
+    <item href="images/cover.svg" id="cover" properties="cover-image" media-type="image/svg+xml" />
+    <!-- <item href="images/recorder-ui.svg" id="recorder-ui.svg" media-type="image/svg+xml" /> -->
+    <item href="images/recorder-ui.jpg" id="recorder-ui.jpg" media-type="image/jpeg" />
+    <item href="images/callout.gif" id="callout.gif" media-type="image/gif" />
+    <item href="images/recorder-ui/recorder-icon.png" id="recorder-icon.png" media-type="image/gif" />
+
+    <!-- Videos -->
+    <item href="videos/recording-single.jpg" id="recording-single_jpg" media-type="image/jpeg" />
+    <item href="videos/recording-single.webm" id="recording-single_webm" media-type="video/webm" />
+    <item href="videos/recording-single.m4v" id="recording-single_m4v" media-type="video/x-m4v" />
+    <item id="webm-bunny" media-type="video/webm" href="videos/recorder_download.webm" />
+    <item id="m4v-bunny" media-type="video/x-m4v" href="videos/recorder_download.m4v" />
+
   </manifest>
 
   <!-- SPINE (mandatory)
@@ -124,16 +126,14 @@
   -->
   <spine>
     <itemref idref="cover" />
-    <itemref idref="frontmatter" />
     <itemref idref="nav" />
     <!-- <itemref idref="toc" /> -->
-    <itemref idref="foreword" />
-    <itemref idref="dedication" />
-    <itemref idref="introduction" />
+    <!-- <itemref idref="foreword" /> -->
     <itemref idref="installation" />
     <itemref idref="recording" />
+    <itemref idref="recorder-ui" />
     <itemref idref="recording-single" />
-    <itemref idref="endnotes" />
+    <itemref idref="uploading" />
     <itemref idref="acknowledgements" />
   </spine>
 
@@ -153,15 +153,12 @@
     <reference href="images/cover.svg" title="Cover" type="cover" />
     <reference href="texts/nav.xhtml" title="Table of Contents" type="toc" />
     <!-- <reference href="texts/toc.xhtml" title="Table of Contents" type="toc" /> -->
-    <reference href="texts/frontmatter.xhtml" type="copyright-page" />
     <reference href="texts/foreword.xhtml" type="foreword" />
-    <reference href="texts/dedication.xhtml" type="dedication" />
     <reference href="texts/introduction.xhtml" type="text" />
-    <reference href="texts/installation.xhtml" type="text" />
     <reference href="texts/recording.xhtml" type="text" />
-    <reference href="texts/recording-single.xhtml" type="text" />
-    <reference href="texts/endnotes.xhtml" type="notes" />
-    <reference href="texts/acknowledgements.xhtml" type="acknowledgements" />
+    <reference href="texts/recording-single.html" type="text" />
+    <reference href="texts/uploading.xhtml" type="text" />
+    <reference href="texts/acknowledgements.html" type="acknowledgements" />
   </guide>
 
 </package>

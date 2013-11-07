@@ -24,7 +24,7 @@ It's supereasy. Just do:
 
     $ ./check book.epub
 
-This project currently uses EpubCheck version 3.0-RC-1.
+This project currently uses EpubCheck version 3.0.1.
 
 ## Style
 
