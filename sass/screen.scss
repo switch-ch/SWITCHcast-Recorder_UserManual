@@ -23,10 +23,15 @@ img {max-width: 100%;}
   @include container($total-columns, $break);
 
   // header and footer are full-width by default.
-  // header, footer {clear: both;display: none;}
-  header {display: oeb-page-head;}
-  footer {display: oeb-page-foot; clear: both;}
-  footer .next {float: right;}
+  header, footer {
+    clear: both;
+    .next {float: right;}
+  }
+  header {
+    // padding: 1em 0;
+    display: oeb-page-head;
+  }
+  footer {display: oeb-page-foot;}
 
   .tutorial-video {}
 

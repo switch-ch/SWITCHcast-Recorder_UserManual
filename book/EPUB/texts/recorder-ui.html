@@ -6,148 +6,69 @@
     <link href="../stylesheets/screen.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <span class="prev icon-ios7-arrow-left">
-        <a href="installation.html">
-          Installation
-        </a>
-      </span>
-      Interface of SWITCHcast Recorder
-      <span class="next icon-">
-        <a href="recording.html">
-          Recording
-        </a>
-        <span class="icon-ios7-arrow-right"></span>
-      </span>
-    </header>
-    <div class="tutorial-video">
-      <h1>Recoder Interface</h1>
-      <img alt="Recorder Interface" src="../images/recorder-ui.jpg" />
-      <p>The recorder interface is made up of several blocks.</p>
-      <h2>Preview Windows</h2>
-      <p>Two windows showing the currently recorded content of the left and right video input source</p>
-      <h2>Input Sources</h2>
-      <p>Some of these elements exist twice, one each for the first and second input source.</p>
-      <h3>Video Source Selector</h3>
-      <p>Dropdown list showing all available video input sources (Default: None)</p>
-      <h3>Audio Source Selector</h3>
-      <p>Dropdown list showing all available audio input sources (Default: None)</p>
-      <h3>Audio Volume Controller</h3>
-      <p>Slider for adjusting the volume of the recording (Only visible if an audio source has been selected)</p>
-      <h3>Audio Level Indicator</h3>
-      <p>Indicator of the current volume level (Only visible if an audio source has been selected)</p>
-      <h3>Mute Button</h3>
-      <p>Button to silence the audio input source</p>
-      <h2>Action Triggers</h2>
-      <h3>Record Button</h3>
-      <p>Button to start the recording of a clip</p>
-      <h3>Change Button</h3>
-      <p>Button to open the settings drawer on the left</p>
-      <h3>Upload Button</h3>
-      <p>Button to start the manual upload of videos via the Upload Manager window</p>
-      <h3>Log Stack</h3>
-      <p>Link to open the Log Panel</p>
-      <h2>Settings Drawer</h2>
-      <p></p>
-      <h2>Upload Manager</h2>
-      <p></p>
-      <h2>Preferences</h2>
-      <div aria-haspopup="true" class="recorder-ui">
+    <div class="page">
+      <header>
+        <span class="prev icon-ios7-arrow-left">
+          <a href="installation.html">
+            Installation
+          </a>
+        </span>
+        Interface of SWITCHcast Recorder
+        <span class="next icon-">
+          <a href="recording-single.html">
+            Record a single video
+          </a>
+          <span class="icon-ios7-arrow-right"></span>
+        </span>
+      </header>
+      <div class="content">
         <img alt="Recorder Interface" src="../images/recorder-ui.jpg" />
-        <div class="hotspots">
-          <div title="Click to go to Preview Window">
-            <a aria-haspopup="false" class="preview-windows" href="http://en.wikipedia.org/wiki/Monkey" rel="nofollow"></a>
-            <p>
-              <strong>Preview Windows</strong>
-              Two windows showing the currently recorded content of the left and right video input source
-            </p>
-            <b class="preview-windows"></b>
-          </div>
-          <div title="Click to go to Input Source">
-            <a aria-haspopup="false" class="input-sources" href="http://en.wikipedia.org/wiki/Monkey" rel="nofollow"></a>
-            <p>
-              <strong>Input Sources</strong>
-            </p>
-            <dl>
-              <dt>
-                Video Source Selector
-                <sup>2</sup>
-              </dt>
-              <dd>Dropdown list showing all available video input sources (Default: None)</dd>
-            </dl>
-            <dl>
-              <dt>
-                Audio Source Selector
-                <sup>2</sup>
-              </dt>
-              <dd>Dropdown list showing all available audio input sources (Default: None)</dd>
-            </dl>
-            <dl>
-              <dt>
-                Audio Volume Control
-                <sup>2</sup>
-              </dt>
-              <dd>Slider for adjusting the volume of the recording, only visible if an audio source has been selected</dd>
-            </dl>
-            <dl>
-              <dt>
-                Audio Level Indicator
-                <sup>2</sup>
-              </dt>
-              <dd>Indicator of the current volume level, only visible if an audio source has been selected</dd>
-            </dl>
-            <dl>
-              <dt>
-                Mute Button
-                <sup>2</sup>
-              </dt>
-              <dd>Button to silence the audio input source</dd>
-            </dl>
-          </div>
-          <div title="Click to go to the Action Triggers">
-            <a aria-haspopup="false" class="action-buttons" href="http://en.wikipedia.org/wiki/Monkey" rel="nofollow"></a>
-            <p>
-              <strong>Action Triggers</strong>
-            </p>
-            <dl>
-              <dt>Record Button</dt>
-              <dd>Button to start the recording of a clip</dd>
-            </dl>
-            <dl>
-              <dt>Change Button</dt>
-              <dd>Button to open the settings drawer on the left</dd>
-            </dl>
-            <dl>
-              <dt>Upload Button</dt>
-              <dd>Button to start the manual upload of videos via the Upload Manager window</dd>
-            </dl>
-            <dl>
-              <dt>Log Stack</dt>
-              <dd>Link to open the Log Panel</dd>
-            </dl>
-          </div>
+        <div class="title">
+          <h1>Recorder Interface</h1>
         </div>
+        <p>The recorder interface is made up of several blocks:</p>
+        <h2>Preview Windows</h2>
+        <p>Two windows showing the currently recorded content of the left and right video input source</p>
+        <h2>Input Sources</h2>
+        <p>Some of these elements exist twice, one each for the first and second input source.</p>
+        <h3>Video Source Selector</h3>
+        <p>Dropdown list showing all available video input sources (Default: None)</p>
+        <h3>Audio Source Selector</h3>
+        <p>Dropdown list showing all available audio input sources (Default: None)</p>
+        <h3>Audio Volume Controller</h3>
+        <p>Slider for adjusting the volume of the recording (Only visible if an audio source has been selected)</p>
+        <h3>Audio Level Indicator</h3>
+        <p>Indicator of the current volume level (Only visible if an audio source has been selected)</p>
+        <h3>Mute Button</h3>
+        <p>Button to silence the audio input source</p>
+        <h2>Action Triggers</h2>
+        <h3>Record Button</h3>
+        <p>Button to start the recording of a clip</p>
+        <h3>Change Button</h3>
+        <p>Button to open the settings drawer on the left</p>
+        <h3>Upload Button</h3>
+        <p>Button to start the manual upload of videos via the Upload Manager window</p>
+        <h3>Log Stack</h3>
+        <p>Link to open the Log Panel</p>
+        <h2>Settings Drawer</h2>
+        <p></p>
+        <h2>Upload Manager</h2>
+        <p></p>
+        <h2>Preferences</h2>
       </div>
-      <h3>Settings Drawer</h3>
-      <p></p>
-      <h3>Upload Manager</h3>
-      <p></p>
-      <h3>Preferences</h3>
+      <footer>
+        <span class="prev icon-ios7-arrow-left">
+          <a href="recorder-ui.html">
+            Recorder Interface
+          </a>
+        </span>
+        <span class="next icon-">
+          <a href="recording-single.html">
+            Record a single video
+          </a>
+          <span class="icon-ios7-arrow-right"></span>
+        </span>
+      </footer>
     </div>
-    <div class="tutorial-text"></div>
-    <div class="tutorial-pics"></div>
-    <footer>
-      <span class="prev icon-ios7-arrow-left">
-        <a href="recorder-ui.html">
-          Recorder Interface
-        </a>
-      </span>
-      <span class="next icon-">
-        <a href="uploading.html">
-          Upload your newly created recording
-        </a>
-        <span class="icon-ios7-arrow-right"></span>
-      </span>
-    </footer>
   </body>
 </html>
