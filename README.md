@@ -1,5 +1,5 @@
 SWITCHcast User Manual
-================
+======================
 
 This manual explains how to use the recorder of SWITCHcast. It has been written using the EPUB3 standard and is currently still a work in progress.
 
@@ -9,16 +9,15 @@ Some useful links:
 * [Download SWITCHcast Recorder](https://www.switch.ch/cast/downloads/)
 
 
+Compile book.epub
+-----------------
+
+
+    ./publish book
 
 
 Development
 -----------
-
-
-
-
-
-
 
 
 ## ePub validation
@@ -31,9 +30,10 @@ If you need help running epubcheck read this <a href="http://blog.threepress.org
 
 It's supereasy. Just do:
 
-    $ ./check book.epub
+    ./check book.epub
 
 This project currently uses EpubCheck version 3.0.1.
+
 
 ## Style
 

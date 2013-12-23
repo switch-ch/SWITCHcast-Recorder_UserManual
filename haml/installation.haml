@@ -8,54 +8,54 @@
     %link{:rel => "stylesheet", :href => "../stylesheets/screen.css", :type => "text/css"}
 
   %body
-    .page
-      %header
-        %span.prev.icon-ios7-arrow-left
-          %a{:href => "nav.html"}
-            Table of Content
-        Installation of SWITCHcast Recorder
-        %span.next.icon-
-          %a{:href => "recorder-ui.html"}
-            Recorder Interface
-          %span.icon-ios7-arrow-right
-      .content
-        %h1 Installation
-        %ul
-          %li
-            Download the current version of the SWITCHcast Recorder from
-            %a{:href => "http://www.switch.ch/cast/downloads/"} our homepage
-          %li
-            Click on the just downloaded file to start the installation dialog
-          %li
-            [THIS WILL CHANGE SUBSTANTIALLY WITH THE NEW RECORDER5, SO WILL NOT BE EXPLAINED HERE]
+    %header
+      %span.prev.icon-ios7-arrow-left
+        %a{:href => "nav.html"}
+          Table of Content
+      Installation of SWITCHcast Recorder
+      %span.next.icon-
+        %a{:href => "recorder-ui.html"}
+          Recorder Interface
+        %span.icon-ios7-arrow-right
 
-        %video{:controls => "controls"}
-          %source{:src => "../videos/recorder_download.webm", :type => "video/webm"}
-          %source{:src => "../videos/recorder_download.m4v", :type => "video/x-m4v"}
-          %track{:kind => "subtitles", :label => "English", :src => "../videos/captions/en/bunny.ttml", :srclang => "en"}
-          %p
-            Sorry, but your reading system does not support HTML5 video.
-            This video is available in
-            %a{:href => "../videos/recorder_download.webm"} WebM
-            and
-            %a{:href => "../videos/recorder_download.m4v"} M4V
-            formats.
-            It can also be
-            = succeed "." do
-              %a{:href => "http://www.example.com/mybook/videos"} viewed online
+    %h1 Installation
+    %ul
+      %li
+        Download the current version of the SWITCHcast Recorder from
+        %a{:href => "http://www.switch.ch/cast/downloads/"} our homepage
+      %li
+        Click on the just downloaded file to start the installation dialog
+      %li
+        [THIS WILL CHANGE SUBSTANTIALLY WITH THE NEW RECORDER5, SO WILL NOT BE EXPLAINED HERE]
 
-        %video{:controls => "controls"}
-          %source{:src => "http://video.webmfiles.org/big-buck-bunny_trailer.webm"}
-          %p
-            Sorry, but your reading system does not support HTML5 video.
-            This video is available online
-            = succeed "." do
-              %a{:href => "http://video.webmfiles.org/big-buck-bunny_trailer.webm"} here
-      %footer
-        %span.prev.icon-ios7-arrow-left
-          %a{:href => "recorder-ui.html"}
-            Recorder Interface
-        %span.next.icon-
-          %a{:href => "uploading.html"}
-            Upload your newly created recording
-          %span.icon-ios7-arrow-right
+    -# %video{:controls => "controls"}
+    -#   %source{:src => "../videos/recorder_download.webm", :type => "video/webm"}
+    -#   %source{:src => "../videos/recorder_download.m4v", :type => "video/x-m4v"}
+    -#   %track{:kind => "subtitles", :label => "English", :src => "../videos/captions/en/bunny.ttml", :srclang => "en"}
+    -#   %p
+    -#     Sorry, but your reading system does not support HTML5 video.
+    -#     This video is available in
+    -#     %a{:href => "../videos/recorder_download.webm"} WebM
+    -#     and
+    -#     %a{:href => "../videos/recorder_download.m4v"} M4V
+    -#     formats.
+    -#     It can also be
+    -#     = succeed "." do
+    -#       %a{:href => "http://www.example.com/mybook/videos"} viewed online
+
+    -# %video{:controls => "controls"}
+    -#   %source{:src => "http://video.webmfiles.org/big-buck-bunny_trailer.webm"}
+    -#   %p
+    -#     Sorry, but your reading system does not support HTML5 video.
+    -#     This video is available online
+    -#     = succeed "." do
+    -#       %a{:href => "http://video.webmfiles.org/big-buck-bunny_trailer.webm"} here
+
+    %footer
+      %span.prev.icon-ios7-arrow-left
+        %a{:href => "recorder-ui.html"}
+          Recorder Interface
+      %span.next.icon-
+        %a{:href => "uploading.html"}
+          Upload your newly created recording
+        %span.icon-ios7-arrow-right

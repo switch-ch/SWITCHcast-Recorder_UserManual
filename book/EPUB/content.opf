@@ -81,13 +81,13 @@
     <item href="fonts/MgOpenModataRegular.ttf" id="mg-open-modata-regular_font" media-type="application/vnd.ms-opentype"/>
 
     <!-- Texts -->
-    <item href="texts/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="texts/nav.html" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <!-- <item href="texts/toc.xhtml" id="toc" media-type="application/xhtml+xml" /> -->
-    <item href="texts/installation.xhtml" id="installation" media-type="application/xhtml+xml" properties="remote-resources"/>
-    <item href="texts/recording.xhtml" id="recording" media-type="application/xhtml+xml" />
+    <item href="texts/installation.html" id="installation" media-type="application/xhtml+xml" properties="remote-resources"/>
+    <item href="texts/recording.html" id="recording" media-type="application/xhtml+xml" />
     <item href="texts/recorder-ui.html" id="recorder-ui" media-type="application/xhtml+xml" properties="svg" />
     <item href="texts/recording-single.html" id="recording-single" media-type="application/xhtml+xml" />
-    <item href="texts/uploading.xhtml" id="uploading" media-type="application/xhtml+xml" />
+    <item href="texts/uploading.html" id="uploading" media-type="application/xhtml+xml" />
     <item href="texts/acknowledgements.html" id="acknowledgements" media-type="application/xhtml+xml" />
 
     <!-- Images -->
