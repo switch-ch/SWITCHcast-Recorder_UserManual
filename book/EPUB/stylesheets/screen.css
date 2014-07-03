@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,46 +20,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -92,7 +92,6 @@ table {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 /* line 49, ../../../sass/_base.sass */
 div.cover {
   text-align: center;
@@ -798,7 +797,6 @@ table.footnote {
   font-weight: normal;
   src: url("Inconsolata.otf");
 }
-
 /* line 539, ../../../sass/_base.sass */
 .normal-mono {
   font-family: "Courier New", Courier, monospace;
@@ -818,7 +816,6 @@ tt, pre, .mono {
   font-size: 0.5em;
   src: url("MgOpenModataRegular.ttf");
 }
-
 /* line 554, ../../../sass/_base.sass */
 .modata {
   font-family: "mgopen modata";
@@ -831,7 +828,6 @@ tt, pre, .mono {
   font-size: 1em;
   src: url("invisible1.ttf");
 }
-
 /* line 564, ../../../sass/_base.sass */
 .hidden-font {
   font-family: "hidden";
@@ -1057,7 +1053,6 @@ tt, pre, .mono {
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 12, ../../../sass/_ionicons.scss */
 [class*="icon-"] {
   font-family: 'ionicons';
@@ -3260,33 +3255,26 @@ img {
 /* line 19, ../../../sass/screen.scss */
 .framed {
   border: 6px solid #999999;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
-/* line 21, ../../../sass/screen.scss */
-.page {
-  *zoom: 1;
-  max-width: 39em;
-  _width: 39em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 @media (min-width: 59em) {
   /* line 21, ../../../sass/screen.scss */
   .page {
+    *zoom: 1;
     max-width: 59em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/utilities/general/_clearfix.scss */
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 /* line 26, ../../../sass/screen.scss */
@@ -3320,27 +3308,28 @@ img {
   }
 }
 
-/* line 66, recorder-ui/*.png */
+/* line 72, recorder-ui/*.png */
 .recorder-ui-sprite, .recorder-ui-input_sources, .recorder-ui-recorder-icon, .recorder-ui-recorder-sources, .recorder-ui-recorder_button {
-  background: url('../images/recorder-ui-se4d176c627.png') no-repeat;
+  background-image: url('../images/recorder-ui-sd04c59949a.png');
+  background-repeat: no-repeat;
 }
 
-/* line 60, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/utilities/sprites/_base.scss */
 .recorder-ui-input_sources {
-  background-position: 0 -228px;
-}
-
-/* line 60, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.recorder-ui-recorder-icon {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.recorder-ui-recorder-sources {
-  background-position: 0 -118px;
+/* line 84, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/utilities/sprites/_base.scss */
+.recorder-ui-recorder-icon {
+  background-position: 0 -92px;
 }
 
-/* line 60, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/utilities/sprites/_base.scss */
+.recorder-ui-recorder-sources {
+  background-position: 0 -210px;
+}
+
+/* line 84, ../../../../../../.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/utilities/sprites/_base.scss */
 .recorder-ui-recorder_button {
   background-position: 0 -320px;
 }

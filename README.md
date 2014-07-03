@@ -9,6 +9,26 @@ Some useful links:
 * [Download SWITCHcast Recorder](https://www.switch.ch/cast/downloads/)
 
 
+Create content using Susy, SASS and Compass
+-------------------------------------
+
+## Install Gems
+
+Currently, a pre-release version of Compass has to be installed to make it work with Susy
+
+  gem install compass --pre
+  gem install susy sass
+
+If you get error messages when Compass compiles, add this gem as well
+
+  gem install compass-susy-plugin
+
+
+## Tell Compass to watch for changes
+
+  compass watch
+
+
 Compile book.epub
 -----------------
 

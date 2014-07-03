@@ -11,7 +11,7 @@ $switch-grey    : #999999;
 
 @import "base";
 @import "ionicons";
-@import "susy";
+@import "susyone";
 
 
 
@@ -20,7 +20,7 @@ img {max-width: 100%;}
 
 .page {
   // page acts as a container for our grid.
-  @include container($total-columns, $break);
+  @include container($total-columns $break);
 
   // header and footer are full-width by default.
   header, footer {
