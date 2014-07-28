@@ -123,6 +123,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/book\/EPUB\/stylesheets\/screen.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/book\/EPUB\/stylesheets\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/book\/EPUB\/texts\/installation.html": {
 		"fileType": 8192,
 		"ignore": 1,

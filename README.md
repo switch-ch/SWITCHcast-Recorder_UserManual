@@ -24,9 +24,9 @@ If you get error messages when Compass compiles, add this gem as well
   gem install compass-susy-plugin
 
 
-## Tell Compass to watch for changes
+## Use Codekit (https://incident57.com/codekit) to compile changes
 
-  compass watch
+Configuration can be found in config.codekit
 
 
 Compile book.epub
