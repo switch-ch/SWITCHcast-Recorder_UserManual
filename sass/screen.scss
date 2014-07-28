@@ -9,10 +9,10 @@ $switch-orange  : #f39800;
 $switch-hellgrey: #f2f4f6;
 $switch-grey    : #999999;
 
+@import "susyone";
 @import "base";
 @import "ionicons";
-@import "susyone";
-
+@import "custom";
 
 
 img {max-width: 100%;}
