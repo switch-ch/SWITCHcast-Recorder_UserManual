@@ -1,77 +1,75 @@
 !!! XML
 
 !!!5
-%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
 
   %head
     %title Recorder Interface
-    %link{:rel => "stylesheet", :href => "../stylesheets/screen.css", :type => "text/css"}
+    %link{rel: "stylesheet", href: "../stylesheets/screen.css", type: "text/css"}
 
 
   %body
     .page
       %header
         %span.prev.icon-ios7-arrow-left
-          %a{:href => "installation.html"}
+          %a{href: "installation.html"}
             Installation
         Interface of SWITCHcast Recorder
         %span.next.icon-
-          %a{:href => "recording-single.html"}
-            Record a single video
+          %a{href: "settings-drawer.html"}
+            Settings Drawer
           %span.icon-ios7-arrow-right
 
       .content
-        -# %a.recorder-ui-recorder_button{:href => "#"} Hallo
-        -# %img.icons-recorder-button{:src => "../images/trans.gif"}
-
-        %img{:alt => "Recorder Interface", :src => "../images/recorder-ui.jpg"}
-
         .title
           %h1 Recorder Interface
 
+        -# %a.recorder-ui-recorder_button{:href => "#"} Hallo
+        -# %img.icons-recorder-button{:src => "../images/trans.gif"}
+
+        %img{alt: "Recorder Interface", src: "../images/recorder-ui-numbered.png"}
+
         %p The recorder interface is made up of several blocks:
 
-        %h2 1 - Preview Windows
+        %h2 &#9312; Preview Windows
         %p Two windows showing the currently recorded content of the left and right video input source
 
         %h2 Input Sources
 
         %p Some of these elements exist twice, one each for the first and second input source.
 
-        %h3 Video Source Selector
+        %h3 &#9313; Video Source Selector
         %p Dropdown list showing all available video input sources (Default: None)
 
-        %h3 Audio Source Selector
+        %h3 &#9314; Audio Source Selector
         %p Dropdown list showing all available audio input sources (Default: None)
 
-        %h3 Audio Volume Controller
+        %h3 &#9315; Audio Volume Controller
         %p Slider for adjusting the volume of the recording (Only visible if an audio source has been selected)
 
-        %h3 Audio Level Indicator
+        %h3 &#9316; Audio Level Indicator
         %p Indicator of the current volume level (Only visible if an audio source has been selected)
 
-        %h3 Mute Button
+        %h3 &#9317; Mute Button
         %p Button to silence the audio input source
 
         %h2 Action Triggers
 
-        %h3 Record Button
+        %h3 &#9318; Record Button
         %p Button to start the recording of a clip
 
-        %h3 Change Button
+        %h3 &#9319; Change Button
         %p Button to open the settings drawer on the left
 
-        %h3 Upload Button
+        %h3 &#9320; Upload Button
         %p Button to start the manual upload of videos via the Upload Manager window
 
-        %h3 Log Stack
+        %h3 &#9321; Log Stack
         %p Link to open the Log Panel
 
-        %h2 Settings Drawer
+        %h2 &#9323; Upload Manager
         %p
-        %h2 Upload Manager
-        %p
-        %h2 Preferences
+        %h2 &#9324; Preferences
 
 
 
@@ -138,9 +136,10 @@
 
       %footer
         %span.prev.icon-ios7-arrow-left
-          %a{:href => "recorder-ui.html"}
-            Recorder Interface
+          %a{href: "installation.html"}
+            Installation
+        Interface of SWITCHcast Recorder
         %span.next.icon-
-          %a{:href => "recording-single.html"}
-            Record a single video
+          %a{href: "settings-drawer.html"}
+            Settings Drawer
           %span.icon-ios7-arrow-right

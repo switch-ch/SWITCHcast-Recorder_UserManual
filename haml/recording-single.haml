@@ -1,17 +1,17 @@
 !!! XML
 
 !!!5
-%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
 
   %head
     %title Create a single recording
-    %link{:rel => "stylesheet", :href => "../stylesheets/screen.css", :type => "text/css"}
+    %link{rel: "stylesheet", href: "../stylesheets/screen.css", type: "text/css"}
   %body
     .page
       %header Record a single clip
       .content
 
-        %video{:controls => "controls", :poster => "../videos/recording-single.jpg", :style => "width:100%", :title => "565"}
+        %video{controls: "controls", :poster => "../videos/recording-single.jpg", :style => "width:100%", :title => "565"}
           %source{:src => "../videos/recording-single.m4v", :type => "video/mp4"}
           %source{:src => "../videos/recording-single.webm", :type => "video/webm"}
 
@@ -46,7 +46,7 @@
 
       %footer
         %span.prev.icon-ios7-arrow-left
-          %a{:href => "recorder-ui.html"}
+          %a{:href => "recorder-interface.html"}
             Recorder Interface
         %span.next.icon-
           %a{:href => "uploading.html"}
