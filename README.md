@@ -1,54 +1,44 @@
-ePub-Boilerplate
-================
+SWITCHcast User Manual
+======================
 
-http://javierarce.github.com/epub-boilerplate
+This manual explains how to use the recorder of SWITCHcast. It has been written using the EPUB3 standard and is currently still a work in progress.
 
-ePub Boilerplate is a simple template that helps you build ePub-formatted books.
+Some useful links:
 
-## How to use the template
+* [About SWITCHcast](https://www.switch.ch/cast)
+* [Download SWITCHcast Recorder](https://www.switch.ch/cast/downloads/)
 
-1. Clone the repo:
 
-        $ git clone git@github.com:javierarce/epub-boilerplate.git
+Create content using Susy, SASS and Compass
+-------------------------------------
 
-2. Edit the contents of the ``book`` directory<sup>1</sup>.
+## Install Gems
 
-3. Run the publish script to generate and validate the book:
+Currently, a pre-release version of Compass has to be installed to make it work with Susy
 
-        $ ./publish book
+  gem install compass --pre
+  gem install susy sass
 
-1: You'll find comments inside several files to guide you.
+If you get error messages when Compass compiles, add this gem as well
 
-## Structure of a book
+  gem install compass-susy-plugin
 
-Here's the structure of the sample book included in the repo:
 
-    ▾ book/
-      ▾ META-INF/
-          com.apple.ibooks.display-options.xml
-          container.xml
-      ▾ EPUB/
-        ▾ images/
-            cover.jpg
-            image-01.jpg
-            image-02.png
-        ▾ stylesheets/
-            style.css
-        ▾ texts/
-            acknowledgements.xhtml
-            chapter01.xhtml
-            chapter02.xhtml
-            chapter03.xhtml
-            cover.xhtml
-            dedication.xhtml
-            endnotes.xhtml
-            foreword.xhtml
-            frontmatter.xhtml
-            introduction.xhtml
-            toc.xhtml
-          content.opf
-          toc.ncx
-        mimetype
+## Use Codekit (https://incident57.com/codekit) to compile changes
+
+Configuration can be found in config.codekit
+
+
+Compile book.epub
+-----------------
+
+
+    ./publish book
+
+
+Development
+-----------
+
 
 ## ePub validation
 
@@ -60,9 +50,10 @@ If you need help running epubcheck read this <a href="http://blog.threepress.org
 
 It's supereasy. Just do:
 
-    $ ./check book.epub
+    ./check book.epub
 
-This project currently uses EpubCheck version 3.0-RC-1.
+This project currently uses EpubCheck version 3.0.1.
+
 
 ## Style
 

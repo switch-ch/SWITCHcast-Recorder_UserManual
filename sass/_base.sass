@@ -4,20 +4,26 @@ $line-height: 1.5em
 $green: #8ae234
 $red: #ef2929
 
-/* This assumes geometric header shrinkage
-/* Also, it tries to make h2 be 1em
+// This assumes geometric header shrinkage
+// Also, it tries to make h2 be 1em
 $h1-size: 1em * 1.6
-$heading-shrinkage: 1/1.6
+$heading-shrinkage: 1/1.2
 
+@import "compass/reset"
+@import "compass/typography"
+@import "compass/utilities"
+@import "compass/css3"
+// @import "compass"
+// @import "compass/css3/border-radius"
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
-  /* Note kindle hates margin:0 ! (or margin-left or margin-top set) it inserts newlines galore
-  /* margin: 0
+  // Note kindle hates margin:0 ! (or margin-left or margin-top set) it inserts newlines galore
+  // margin: 0
   margin-right: 0
   padding: 0
   border: 0
   font-size: 100%
-  /* font: inherit
+  // font: inherit
   vertical-align: baseline
 
 
@@ -29,14 +35,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /*body
 /*  font-size: 1.6rem
 /*  line-height: 2.56rem
-/*  text-rendering: optimizeLegibility
+/*  text-rendering: optimizeLegibility */
 
 
 table
   border-collapse: collapse
   border-spacing: 0
 
-/* end reset
+/* end reset */
 
 @page
   margin-top: 30px
@@ -68,7 +74,7 @@ div.cover
   padding: 0px
   margin: 0px
 
-/* font plan- serif text, sans headers
+/* font plan- serif text, sans headers */
 
 h1, h2, h3, h4, h5, h6
   hyphens: none !important
@@ -106,7 +112,7 @@ h5
 h6
   font-size: $h1-size*$heading-shrinkage*$heading-shrinkage*$heading-shrinkage*$heading-shrinkage*$heading-shrinkage
 
-/* Do not indent first paragraph. Mobi will need class='first-para'
+/* Do not indent first paragraph. Mobi will need class='first-para' */
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p
   text-indent: 0
@@ -117,11 +123,11 @@ p
   &.first-para, &.first-para-chapter, &.note-p-first
     text-indent: 0
   &.first-para-chapter::first-line
-    /* handle run-in
+    /* handle run-in */
     font-variant: small-caps
   &.no-indent
     text-indent: 0
-  /* paperwhite defaults to sans
+  /* paperwhite defaults to sans */
   font-family: "Palatino", "Times New Roman", Caecilia, serif
   -webkit-hyphens: auto
   -moz-hyphens: auto
@@ -146,7 +152,7 @@ p
   adobe-hyphenate: none !important
 
 .rtl
-  direction: rtl
+  // direction: rtl
   float: right
 
 .drop
@@ -165,7 +171,7 @@ p
   float: left
   height: 0.8em
 
-/* lists
+/* lists */
 
 ul, ol, dl
   margin: 1em 0 1em 0
@@ -180,7 +186,7 @@ li
   text-indent: 0
   margin: 0
   p
-    /* Fix paragraph indenting inside of lists
+    /* Fix paragraph indenting inside of lists */
     text-indent: 0em
 
 dt
@@ -191,7 +197,7 @@ dd
   line-height: $line-height
   font-family: "Palatino", "Times New Roman", Caecilia, serif
   p
-    /* Fix paragraph indenting inside of definition lists
+    /* Fix paragraph indenting inside of definition lists */
     text-indent: 0em
 
 
@@ -212,7 +218,7 @@ pre
   font-size: .8em
   line-height: 1.2em
   margin-left: 1em
-  /* margin-top: 1em
+  /* margin-top: 1em */
   margin-bottom: 1em
   white-space: pre-wrap
   display: block
@@ -224,12 +230,12 @@ img
   box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px
   box-sizing: border-box
   border: white 0.5em solid
-  /* Don't go too big on images, let reader zoom in if they care to
+  /* Don't go too big on images, let reader zoom in if they care to */
   max-width: 80%
   max-height: 80%
 
 img.pwhack
-  /* Paperwhite hack
+  /* Paperwhite hack */
   width: 100%
 
 .group
@@ -246,7 +252,7 @@ p img
   border: none
 
 figure
-  /* These first 3 should center figures
+  /* These first 3 should center figures */
   padding: 1em
   background-color: $sidebar-border-color
   border: 1px solid black
@@ -268,11 +274,11 @@ div
     border-bottom: 0px dashed $sidebar-border-color
     page-break-inside: avoid
 
-/* sidebar
+/* sidebar */
 
 p.note-title, .admonition-title
   margin-top: 0
-  /*mobi doesn't like div margins
+  /*mobi doesn't like div margins */
   font-variant: small-caps
   font-size: .9em
   text-align: center
@@ -281,28 +287,28 @@ p.note-title, .admonition-title
   -webkit-hyphens: none
   -moz-hyphens: none
   hyphens: none
-  /* margin:0 1em 0 1em
+  /* margin:0 1em 0 1em */
 
 div.note p, .note-p
   text-indent: 1em
   margin-left: 0
   margin-right: 0
-/*  font-style: italic
+/*  font-style: italic */
 
-/* Since Kindle doesn't like multiple classes have to have combinations
+/* Since Kindle doesn't like multiple classes have to have combinations */
 div.note p.note-p-first
   text-indent: 0
   margin-left: 0
   margin-right: 0
 
 
-/* Tables
+/* Tables */
 
 table
-  /*width: 100%
+  /*width: 100% */
   page-break-inside: avoid
   border: 1px
-  /* centers on kf8
+  /* centers on kf8 */
   margin: 1em auto
   border-collapse: collapse
   border-spacing: 0
@@ -329,7 +335,7 @@ td:nth-last-child
   border-bottom: 1px solid $table-border-color
 
 .zebra
-  /* shade background by groups of three
+  /* shade background by groups of three */
   tr th
     background-color: white
   tr:nth-child(6n-1), tr:nth-child(6n+0), tr:nth-child(6n+1)
@@ -356,7 +362,7 @@ table.footnote
   vertical-align: super
 
 .tocEntry-1 a
-  /* empty
+  /* empty */
   font-weight: bold
   text-decoration: none
   color: black
@@ -404,7 +410,7 @@ table.footnote
 .f-left
   float: left
 
-/* Samples
+/* Samples */
 .ingredient
   page-break-inside: avoid
 
@@ -490,14 +496,14 @@ table.footnote
 .size2
   font-size: small
 .size3
-  /* default
+  /* default */
   font-size: medium
 .size4
   font-size: large
 .size5
   font-size: x-large
 
-/* Poetic margins
+/* Poetic margins */
 .stanza
   margin-top: 1em
   font-family: serif
@@ -508,7 +514,7 @@ table.footnote
 .poetry
   margin: 1em
 
-/*line number
+/*line number */
 .ln
   float: left
   color: #999
@@ -537,7 +543,7 @@ table.footnote
   font-family: "Courier New", Courier, monospace
 
 tt, pre, .mono
-  /* Kindle Keyboard has KF8 but no font support, fallback to default mono
+  /* Kindle Keyboard has KF8 but no font support, fallback to default mono */
   font-family: "Inconsolata Mono", "Courier New", Courier, monospace
   font-style: normal
 
@@ -562,8 +568,8 @@ tt, pre, .mono
   font-family: "hidden"
 
 
-/* Nook works to here :)
-/* media queries at bottom to not confuse other platforms
+/* Nook works to here :) */
+/* media queries at bottom to not confuse other platforms */
 @media (min-width: 200px)
   .px200
     color: $green
@@ -580,13 +586,13 @@ tt, pre, .mono
   .px1200
     color: $green
 /* broke nook!
-/*/* WIP device specific...
+/* WIP device specific...
 /*@media (min-width: 600px) and (height: 800px) and (amzn-kf8)
 /*  /* Kindle Keyboard w/ KF8
 /*  .kk
 /*    color: $green
 /*
-/*/* @media (min-width: 768px) and (height: 1024px) and (amzn-kf8)
+/* @media (min-width: 768px) and (height: 1024px) and (amzn-kf8)
 /*@media (min-width: 748px) and (min-height: 1004px) and (amzn-kf8)
 /*  /* Kindle Paperwhite
 /*  .kpw
@@ -601,7 +607,7 @@ tt, pre, .mono
 /*@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)
 /*  .retina
 /*    color: $green
-/*
+/* */
 @media amzn-kf8
   span.dropcapold
     font-size: 300%
@@ -632,17 +638,17 @@ tt, pre, .mono
   /* x-small  2
   /* small    3
   /* medium   4
-  /*     1em  default (nothing)
+  /*     1em  default (nothing) */
 
   tt
-    /* mobi fun
+    /* mobi fun */
     /* font-size: x-small  /* turns into <font size="2" */
     font-family: "Courier New", Courier, monospace
 
   pre
     margin-left: 1em
     margin-bottom: 1em
-    /* mobi fun
+    /* mobi fun */
     font-size: x-small
     font-family: "Courier New", Courier, monospace
     white-space: pre-wrap
@@ -670,7 +676,7 @@ tt, pre, .mono
     font-size: $h1-size/1.6
 
   blockquote
-    /* something in this css causes blockquotes to get doubly indented! (BUG)
+    /* something in this css causes blockquotes to get doubly indented! (BUG) */
     font-style: italics
     margin-left: 0em
     margin-right: 0em
@@ -679,11 +685,11 @@ tt, pre, .mono
   /* descendant selectors don't work in mobi7 infact this will override the preview h1 defintion! */
   /* h1 tt, h2 tt {
   /*   font-size: 1em;
-  /*   color: green;}
+  /*   color: green;} */
 
   div.note
     border: 1px solid black
-    /*text-indent: 1em
+    /*text-indent: 1em */
 
   div.note, .note-p
     text-indent: 1em
@@ -691,7 +697,7 @@ tt, pre, .mono
     margin-right: 0
     font-style: italic
 
-  /* Since Kindle doesn't like multiple classes have to have combinations (fixed in 2.7)
+  /* Since Kindle doesn't like multiple classes have to have combinations (fixed in 2.7) */
   .note-p-first
     text-indent: 0
     margin-left: 1em
@@ -702,9 +708,9 @@ tt, pre, .mono
     margin-right: 1em
 
 
-  /* Poetry handing indent hacks
-  /* see http://ebookarchitects.com/blog/backwards-compatible-poetry-for-kf8mobi/
-  /* and http://www.pigsgourdsandwikis.com/2012/01/media-queries-for-formatting-poetry-on.html
+  /* Poetry handing indent hacks */
+  /* see http://ebookarchitects.com/blog/backwards-compatible-poetry-for-kf8mobi/ */
+  /* and http://www.pigsgourdsandwikis.com/2012/01/media-queries-for-formatting-poetry-on.html */
   .pos1
     text-indent: -1em
   .pos2
@@ -715,7 +721,7 @@ tt, pre, .mono
     text-indent: -1em
 
 
-/* does nook ignore this?
+/* does nook ignore this? */
 .green
   color: $green
 /*These break NOOK!
@@ -726,4 +732,4 @@ tt, pre, .mono
 /*@media (color)
 /*  .color
 /*    color: $green
-/*
+/* */

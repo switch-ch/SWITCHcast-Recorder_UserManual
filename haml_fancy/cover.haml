@@ -1,0 +1,16 @@
+!!! XML
+
+!!!5
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+
+  %head
+    %title Cover
+    %link{:rel => "stylesheet", :href => "../stylesheets/screen.css", :type => "text/css"}
+    :cdata
+      img { max-width: 100%; }
+      body { oeb-column-number: 1; }
+      #cover-image { text-align: center; }
+  %body
+    .page
+      .content
+        img{:alt => "SWITCHcast Recorder User Manual", :src => "../images/cover.svg"}
