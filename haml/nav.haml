@@ -1,52 +1,46 @@
 !!! XML
 
 !!!5
-%html{:xmlns => "http://www.w3.org/1999/xhtml", :'xmlns:epub' => "http://www.idpf.org/2007/ops", 'xml:lang' => "en", :lang => "en"}
+%html{xmlns: "http://www.w3.org/1999/xhtml", :'xmlns:epub' => "http://www.idpf.org/2007/ops", 'xml:lang' => "en", lang: "en"}
 
   %head
-    %title Create a single recording
-    %link{:rel => "stylesheet", :href => "../stylesheets/screen.css", :type => "text/css"}
+    %title Table of Content
+    %link{rel: "stylesheet", href: "../stylesheets/screen.css", type: "text/css"}
   %body
     .page
-      %header Table of content
+      %header Table of Content
       .content
         %nav#toc{"epub:type" => "toc"}
           %h2 SWITCHcast Recorder - User Manual
           %ol
-            %li{:hidden => "hidden"}
-              %a{:href => "cover.html"} Cover
+            %li{hidden: "hidden"}
+              %a{href: "cover.html"} Cover
             %li
-              %a{:href => "installation.html"} Installation
+              %a{href: "installation.html"} Installation
             %li
-              %a{:href => "recording.html"} Recording
-              %ol
-                %li
-                  %a{:href => "recording-single.html"} Single Recording
-                %li
-                  %a{:href => "recording-automatic.html"} Automatic Recording
+              %a{href: "recorder-interface.html"} Recorder Interface
             %li
-              %a{:href => "upload.html"} Uploading
-              %ol
-                %li
-                  %a{:href => "upload-single.html"} Single
-                %li
-                  %a{:href => "upload-automatic.html"} Automatic
-                %li
-                  %a{:href => "upload-batch.html"} Batch
-                %li
-                  %a{:href => "upload-manual.html"} Manual
+              %a{href: "settings-drawer.html"} Settings Drawer
+            %li
+              %a{href: "upload-manager.html"} Upload Manager
+            %li
+              %a{href: "preferences-panel.html"} Preferences Panel
+            %li
+              %a{href: "recording-single.html"} Single Recording
+            %li
+              %a{href: "recording-periodical.html"} Periodical Recording
         %nav#guide{"epub:type" => "landmarks"}
           %h2 Guide
           %ol
             %li
-              %a{"epub:type" => "toc", :href => "#toc"} Table of Contents
+              %a{"epub:type" => "toc", href: "#toc"} Table of Contents
             %li
-              %a{"epub:type" => "bodymatter", :href => "installation.html"} Begin Reading
-            %li
-              %a{"epub:type" => "index", :href => "index.html"} Index
+              %a{"epub:type" => "bodymatter", href: "installation.html"} Begin Reading
+            -# %li
+            -#   %a{"epub:type" => "index", href: "index.html"} Index
 
-        %nav#pages{"epub:type" => "page-list", :hidden => "hidden"}
-          %h2 Pages
-          %ol
-            %li
-              %a{:href => "installation.html#Page_169"} 169
+        -# %nav#pages{"epub:type" => "page-list", hidden: "hidden"}
+        -#   %h2 Pages
+        -#   %ol
+        -#     %li
+        -#       %a{href: "installation.html#Page_169"} 169

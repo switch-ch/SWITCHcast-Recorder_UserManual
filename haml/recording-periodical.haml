@@ -4,26 +4,20 @@
 %html{xmlns: "http://www.w3.org/1999/xhtml"}
 
   %head
-    %title Single recording
+    %title Repeating recording
     %link{rel: "stylesheet", href: "../stylesheets/screen.css", type: "text/css"}
 
   %body
     .page
       %header
         %span.prev.icon-ios7-arrow-left
-          %a{href: "upload-manager.html"} Upload Manager
-        Do a Single Recording
+          %a{href: "recording-single.html"} Single Recording
+        Do a Periodical/Repeating Recording
         %span.next.icon-
-          %a{href: "recording-periodical.html"} Periodical Recording
+          %a{href: "acknowledgements.html"} Acknowledgements
           %span.icon-ios7-arrow-right
 
       .content
-
-        %video{controls: "controls", poster: "../videos/recording-single.jpg", style: "width:100%", title: "565"}
-          %source{src: "../videos/recording-single.m4v", type: "video/mp4"}
-          %source{src: "../videos/recording-single.webm", type: "video/webm"}
-
-        %hr
 
         %h2 Prerequisites
         %ul.disc
@@ -31,6 +25,9 @@
             The SWITCHcast Recorder is
             %a{href: "installation.html"} installed on your computer
           %li All input sources are connected to your computer
+
+        %h2
+
 
         %h2 Hey! Ho! Let's go
         %img.framed{alt: "Recorder Icon", src: "../images/recorder-ui/recorder-icon.png"}/
