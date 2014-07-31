@@ -1,0 +1,60 @@
+!!! XML
+
+!!!5
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
+
+  %head
+    %title Settings Drawer
+    %link{rel: "stylesheet", href: "../stylesheets/screen.css", type: "text/css"}
+
+
+  %body
+    .page
+      %header
+        %span.prev.icon-ios7-arrow-left
+          %a{href: "recorder-interface.html"} Recorder Interface
+        Settings of SWITCHcast Recorder
+        %span.next.icon-
+          %a{href: "upload-manager.html"} Upload Manager
+          %span.icon-ios7-arrow-right
+
+      .content
+        .title
+          %h1 Settings Drawer
+
+        %p In the setting drawer you can configure and define the values of the current recording.
+
+        %p The drawer can be opened by clicking on the 'Change' button in the recorder interface.
+
+        -# %a.recorder-ui-recorder_button{:href => "#"} Hallo
+        -# %img.icons-recorder-button{:src => "../images/trans.gif"}
+
+        %img{alt: "Settings Drawer", src: "../images/settings-drawer.png"}
+
+        %p The drawer is divided into two parts.
+
+        %h2 &#9312; Setting recording time
+
+        %p You can define the duration of a recording before and even during a recording.
+
+        .per3 In the upper field, you can enter a value defining the complete duration of the recording. Please note that this value is in minutes.
+
+        .hint Caution: If adjusting the duration during a recording, the minutes specified do not represent the complete recording. Instead they represent the remaining time of recording.
+
+        %h2 &#9313; Choosing upload channel
+
+        %p In the channel list &#9314;, you choose in which channel you want your clip to be added.
+
+        %p If you have many channels, you can search within them using the search field &#9315;.
+
+        %p
+          If you see no channels listed or you are missing one, you can click on the "More Channels..." button. A popup window will open and ask you to sign in using SWITCHaai. Once you have successfully logged in, you will see the channel list getting populated with your channels.
+
+
+      %footer
+        %span.prev.icon-ios7-arrow-left
+          %a{href: "recorder-interface.html"} Recorder Interface
+        Settings of SWITCHcast Recorder
+        %span.next.icon-
+          %a{href: "upload-manager.html"} Upload Manager
+          %span.icon-ios7-arrow-right
