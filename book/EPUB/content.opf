@@ -72,7 +72,7 @@
     <item href="images/cover.svg" id="cover-img" properties="cover-image" media-type="image/svg+xml" />
     <!-- <item href="images/recorder-ui.svg" id="recorder-ui.svg" media-type="image/svg+xml" /> -->
     <item href="images/recorder-ui.jpg" id="recorder-ui.jpg" media-type="image/jpeg" />
-    <item href="images/recorder-ui-sd04c59949a.png" id="recorder.png" media-type="image/png" />
+    <item href="images/recorder-ui-sa362f61415.png" id="recorder.png" media-type="image/png" />
     <item href="images/recorder-ui/recorder-icon.png" id="recorder-icon.png" media-type="image/png" />
     <item href="images/recorder-ui/recorder_button.png" id="recorder_button.png" media-type="image/png" />
     <item href="images/recorder-ui/recorder-sources.png" id="recorder-sources.png" media-type="image/png" />
