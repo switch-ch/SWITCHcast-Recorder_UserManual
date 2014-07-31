@@ -19,33 +19,39 @@
 
       .content
 
-        %h2 Prerequisites
+        %h1.subheader Automatic, periodic Recordings
+
+        %P If you have repeating events, eg. lectures, you can define periodic recording. This allows you to start, stop and upload recording automatically without human intervention.
+
+        %img{alt: "Calendar Entry", src: "../images/calendar.png"}
+
+
+        %h2.subheader Prerequisites
         %ul.disc
+          %li A calendar application capable of providing information using iCal is installed on your computer. This manual expects you to use Calendar.app which is preinstalled on any recent Apple computer.
           %li
             The SWITCHcast Recorder is
             %a{href: "installation.html"} installed on your computer
           %li All input sources are connected to your computer
 
-        %h2
 
+        %h2.subheader Create a new calendar
 
-        %h2 Hey! Ho! Let's go
-        %img.framed{alt: "Recorder Icon", src: "../images/recorder-ui/recorder-icon.png"}/
-        %p Open the SWITCHcast Recorder by clicking on the icon in your dock.
-
-        %img.framed{alt: "Recorder Sources", src: "../images/recorder-ui/recorder-sources.png"}/
-        %p Choose the appropriate video and audio input sources.
-        %p Click on the 'Record' button to start the recording
         %ul.disc
-          %li Click on the 'Start' button to begin with the recording
-          %li Supervise the recording
-          %li Once the recorded event has finished, click on the 'Stop' button
-          %li Click on the 'Yes' button of the popup window to confirm the end of recording
+          %li Create a new calendar (File > New Calendar) and give it a meaningful name
+          %li Add repeating events in the calendar in the time span you want the recording to take place. As the title of the recording event use the channel number.
+          %li
+            %ul.disc
+              %li
+                Go to the 'Calendar' tab in the
+                %a{href: "preferences-panel.html"} Preferences Panel.
+              %li Choose the calendar you want to connect for automatic recordings
+
 
       %footer
         %span.prev.icon-ios7-arrow-left
-          %a{href: "upload-manager.html"} Upload Manager
-        Do a Single Recording
+          %a{href: "recording-single.html"} Single Recording
+        Do a Periodical/Repeating Recording
         %span.next.icon-
-          %a{href: "recording-periodical.html"} Periodical Recording
+          %a{href: "acknowledgements.html"} Acknowledgements
           %span.icon-ios7-arrow-right

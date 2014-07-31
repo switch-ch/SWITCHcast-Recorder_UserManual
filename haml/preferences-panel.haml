@@ -19,83 +19,41 @@
           %span.icon-ios7-arrow-right
 
       .content
-        -# .title
-        %h1.subheader Upload Manager
-
-        %p In the upload manager you can - the name says it all - manage and upload your completed recordings.
-
-        %p The upload manager can be opened by clicking on the 'Upload' button in the recorder interface. If you have recordings waiting to be uploaded, this button will have a red badge telling the number of pending recordings.
-
-        %img{alt: "Settings Drawer", src: "../images/upload-manager.png"}
+        %h1.subheader Preferences Panel
 
 
-        %h2.subheader Components of the Upload Manager
+        %p The preferences window can be found under 'SWITCHcast Recorder > Preferences'. It is split into different tabs:
 
-        %h3.subheader &#9312; Filter and Search Bar
 
-        This bar allows you to search for specific recordings. By clicking on the texts on the left, you can filter your recording by status:
-        %ul.disc
-          %li
-            %strong All:
-            Show all recordings
-          %li
-            %strong Ready to upload:
-            Show only recordings that are not yet uploaded
-          %li
-            %strong Completed:
-            Show only recordings that have been successfullly uploaded
 
-        %h3.subheader &#9313; Recording List
+        %h2.subheader General
 
-        %p In the recording list, you find all the recordings that fulfill the conditions defined by the filter and/or the search term above.
+        %img{alt: "General Preferences", src: "../images/preferences/preferences_general.png"}
 
-        %h4.subheader &#9314; Per-Channel Options
 
-        %ul.disc
-          %li Give the recording a title and subtitle
-          %li
-            %strong Auto publish
-            Automatically publish the recording once uploaded. If this option is enabled, there's no need to manually cut and publish the recording.
-          %li
-            More options can be found behind the Hamburger menu
-            %ul.disc
-              %li
-                %strong Upload Recording:
-                Send the recording to the SWITCHcast server for subsequent cutting and editing
-              %li
-                %strong Change AAI Owner of Recording:
-                You will be asked to authenticate yourself with AAI. Once you have done so successfully, your future actions will be done using these credentials.
-              %li
-                %strong Delete Recording:
-                Pretty self-explanatory, I reckon
-              %li
-                %strong Reveal Recording in Finder:
-                Will open a Finder window that shows the actual file of the recording. This can be handy for: General trouble shooting, Manual upload of recording, Use of original recording outside of SWITCHcast
+        %h2.subheader Notification
 
-        %h4.subheader &#9315; General Options
+        %img{alt: "Notification Preferences", src: "../images/preferences/preferences_notification.png"}
 
-        %ul.disc
-          %li
-            %strong Import Video
-            Allows you to manually add videos from your locale file system. This way you can ingest external videos into the SWITCHcast workflow.
-          %li
-            %strong Upload all Videos
-            This button sends all recordings that have not yet been uploaded to the SWITCHcast server.
 
-        %h4.subheader &#9316; Bulk Options
+        %h2.subheader Channels
 
-        These options will be applied to all selected recordings. You can select recordings by left-clicking on them while pressing the cmd-key.
+        %img{alt: "Channels Preferences", src: "../images/preferences/preferences_channels.png"}
 
-        %ul.disc
-          %li
-            %strong Auto Publish
-            Enable auto publishing, for explanation see above
-          %li
-            %strong Select Channel
-            Clicking on this button opens the channel list. This allows you to move recordings to another channel than the one chosen before starting the recording.
-          %li
-            %strong Apply
-            Your bulk action will only be executed once you have clicked on this button
+
+        %h2.subheader Calendar
+
+        %img{alt: "Calendar Preferences", src: "../images/preferences/preferences_calendar.png"}
+
+
+        %h2.subheader iVT
+
+        %img{alt: "Calendar Preferences", src: "../images/preferences/preferences_ivt.png"}
+
+
+        %h2.subheader Recording
+
+        %img{alt: "Calendar Preferences", src: "../images/preferences/preferences_recording.png"}
 
 
       %footer
