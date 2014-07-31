@@ -10469,30 +10469,25 @@ img {
   }
 }
 
-/* line 72, recorder-ui/*.png */
-.recorder-ui-sprite, .recorder-ui-input_sources, .recorder-ui-recorder-icon, .recorder-ui-recorder-sources, .recorder-ui-recorder_button {
-  background-image: url('../images/recorder-ui-sd04c59949a.png');
+/* line 64, recorder-ui/*.png */
+.recorder-ui-sprite, .recorder-ui-recorder-icon, .recorder-ui-recorder-sources, .recorder-ui-recorder_button {
+  background-image: url('../images/recorder-ui-sa362f61415.png');
   background-repeat: no-repeat;
 }
 
 /* line 84, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/utilities/sprites/_base.scss */
-.recorder-ui-input_sources {
+.recorder-ui-recorder-icon {
   background-position: 0 0;
 }
 
 /* line 84, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/utilities/sprites/_base.scss */
-.recorder-ui-recorder-icon {
-  background-position: 0 -92px;
-}
-
-/* line 84, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/utilities/sprites/_base.scss */
 .recorder-ui-recorder-sources {
-  background-position: 0 -210px;
+  background-position: 0 -118px;
 }
 
 /* line 84, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/utilities/sprites/_base.scss */
 .recorder-ui-recorder_button {
-  background-position: 0 -320px;
+  background-position: 0 -228px;
 }
 
 /* Responsive Tooltip without SVG */
@@ -10541,20 +10536,6 @@ img {
   margin: 0;
   font: normal 18px/22px 'times new roman',serif;
   color: #444;
-}
-/* line 82, ../../../sass/screen.scss */
-.image-map b, .recorder-ui b {
-  display: block;
-  position: absolute;
-  background: url(url('../images/trans.gif?1406547625'));
-  z-index: 200;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  padding: 1px;
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  -o-transition: 0.75s;
-  transition: 0.75s;
 }
 /* line 90, ../../../sass/screen.scss */
 .image-map .hotspots, .recorder-ui .hotspots {
